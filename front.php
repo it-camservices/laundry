@@ -4,8 +4,28 @@
 .aquater {width:32%; float:left; text-align:center}
 .border{border:#CCC solid 1px;}
 .haft{width:49%; float:left; text-align:center}
+.button {
+  margin: 10px;
+  text-indent: -9999px;
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+  float: left;
+  text-align: center;
+  background: url(images/buttons.png) no-repeat;
+  
+}
+.button:hover {opacity:.8;}
+.dec {
+  background-position: 0 -29px;
+}
+
+.buttons {
+  padding: 20px 0 0 140px;
+}
 </style>
 </head>
+
 	<div data-role="page" class="jqm-demos" data-quicklinks="true">
 	<div data-role="header" data-theme="a">
     <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>     
@@ -14,16 +34,19 @@
     </div>
 	<div data-role="content" style="text-align:center;​">
    <form>
+   
            <div class="ui-grid-b ui-responsive">
                 <div class="ui-block-a">
                 	<div class="ui-body ui-body-d">
                 
                         <div class="haft border"> 
                             <div><img src="images/01.png"/>
-                            <div class="haft"><input type="number" name="thirt" id="thirt" value="" ></div>
+                        <div class="numbers-row">
                         <div class="haft">
-                            <a href="#" class="ui-icon-alt" data-role="button" data-icon="plus" data-iconpos="notext" data-inline="true">Plus</a>
-                            <a href="#" class="ui-icon-alt" data-role="button" data-icon="minus" data-iconpos="notext" data-inline="true">Minus</a>
+                        <input type="number" name="thirt" id="thirt" value="" >
+                        </div>
+                            
+                            
                         </div>                    	
                             
                             </div>
@@ -73,7 +96,6 @@
                         <input type="checkbox" name="strain" id="strain">
                         <label for="strain">ប្រឡាក់ច្រេះ</label>
                     </fieldset>
-                    
                     <input type="submit" value="Submit" data-iconpos="right" data-icon="check">
                 	<input type="reset" value="Reset" data-iconpos="right" data-icon="refresh">
                     

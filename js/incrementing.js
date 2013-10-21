@@ -1,6 +1,6 @@
 $(function() {
 
-  $(".numbers-row").append('<a href="#" class="ui-icon-alt" data-role="button" data-icon="plus" data-iconpos="notext" data-inline="true">Plus</a><a href="#" class="ui-icon-alt" data-role="button" data-icon="minus" data-iconpos="notext" data-inline="true">Minus</a');
+  $(".numbers-row").append('<div class="inc button">+</div><div class="dec button">-</div>');
 
   $(".button").on("click", function() {
 
